@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image:linear-gradient(to left ,#38949759,#faf5ef45), url('images/imgBG.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* width: 100%; */
+}
+
+.container {
+    background-color: #faf5eff0;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 420px;
+    
+}
+
+.header {
+    background-color: #389497;
+    padding: 12px 0;
+
+}
+
+.header h2 {
+    color: #f0f0f0;
+    text-align: center;
+}
+
+.form .btn {
+    background-color: #76e8a6;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    color: #000;
+    display: block;
+    font-size: 16px;
+    padding: 10px 0;
+    margin-top: 37px;
+    width: 100%;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.form {
+    padding: 25px 20px;
+}
+
+.form-control {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 17px;
+}
+
+.form-control input {
+    width: 100%;
+    border: 2px solid #fefefe00;
+    border-radius: 5px;
+    display: block;
+    font-size: 14px;
+    padding: 8px;
+}
+
+.form-control input:focus {
+    outline: 0;
+    border-color: #777 ;
+}
+
+.form-control.success input {
+    border-color: #2ecc71 ;
+}
+
+.form-control.error input {
+    border-color: #e74c3c ;
+}
+
+.form-control i {
+    position: absolute;
+    right: 10px ;
+    top: 34px;
+    visibility: hidden;
+}
+
+.form-control.success i.fa-check-circle {
+    color: #2ecc71;
+    visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.form-control small {
+    color: #e74c3c;
+    position: absolute;
+    left: 4px;
+    visibility: hidden;
+    margin-top: 1.5px;
+    font-weight: bold ;
+
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+
+
+.form .btn:hover {
+    background: #2ecc71;
+    color: #fff;
+}
+
+@media all and (max-width: 989px ){
+    .container{
+        width: 385px;
+    }
+
+    .header {
+        padding: 8px;
+    }
+
+    .header h2 {
+        font-size: 20px;
+    }
+
+    .form {
+        padding: 22px 18px ;
+    }
+
+    .form-control {
+        margin-bottom: 18px;
+    }
+
+    .form-control label {
+        font-size: 15.5px;
+    }
+
+    .form-control input {
+        font-size: 13px;
+        padding: 5px 6px;
+    }
+
+    .form-control i {
+        top: 31.9px;
+    }
+}
+
+@media all and (max-width: 690px ){
+
+    .header {
+        padding: 7px;
+    }
+
+    .header h2 {
+        font-size: 19px;
+    }
+    .container{
+        width: 320px;
+    }
+
+    .form .btn {
+        padding: 6px 0;
+        margin-top: 30px;
+        font-size: 14px;
+    }
+
+    .form-control small {
+        font-size: 11px;
+        margin-top: 0;
+    }
+
+    .form-control i {
+        top: 30.9px;
+    }
+}
+
+@media all and (max-width: 490px ){
+    .container{
+        width: 285px;
+    }
+
+    .form-control small {
+        font-size: 11px;
+        margin-top: 0;
+    }
+
+    .form-control i {
+        top: 29.8px;
+    }
+
+    .form .btn {
+        padding: 4px 0;
+        margin-top: 30px;
+        font-size: 13px;
+    }
+
+    .header {
+        padding: 6px;
+    }
+
+    .header h2 {
+        font-size: 18px;
+    }
+}
